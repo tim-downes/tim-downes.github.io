@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Your Name | Portfolio</title>
+  <style>
+    :root {
+      --bg: #f5f7fa;
+      --text: #1b2430;
+      --muted: #55616f;
+      --accent: #0b6e6e;
+      --line: #d5dce4;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+      line-height: 1.6;
+    }
+    .wrap { max-width: 44rem; margin: 0 auto; padding: 0 1.25rem; }
+    nav { padding: 1rem 0; border-bottom: 1px solid var(--line); }
+    nav a { margin-right: 1.25rem; color: var(--text); text-decoration: none; font-weight: 600; }
+    nav a:hover, nav a:focus { color: var(--accent); text-decoration: underline; }
+    header { padding: 4rem 0 3rem; }
+    h1 { font-size: clamp(2.2rem, 7vw, 3.4rem); line-height: 1.1; margin: 0 0 1rem; }
+    .statement { font-size: 1.3rem; color: var(--muted); max-width: 36rem; margin: 0; }
+    section { padding: 2.5rem 0; border-top: 1px solid var(--line); }
+    h2 { font-size: 1.5rem; margin: 0 0 1.25rem; }
+    .skills { list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: .6rem; }
+    .skills li {
+      background: #fff; border: 1px solid var(--line); border-radius: 999px;
+      padding: .3rem .9rem; font-weight: 600;
+    }
+    .project { padding: 1rem 0 1.25rem; border-bottom: 1px solid var(--line); }
+    .project:last-child { border-bottom: 0; }
+    .project h3 { margin: 0 0 .25rem; font-size: 1.15rem; }
+    .project p { margin: 0 0 .5rem; color: var(--muted); }
+    a { color: var(--accent); }
+    a:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
+    footer { padding: 2rem 0 3rem; border-top: 1px solid var(--line); color: var(--muted); }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <nav>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- 1. PERSONAL STATEMENT: change the name and the one sentence -->
+    <header>
+      <h1>Your Name</h1>
+      <p class="statement">
+        I am a [your major or field] student who [what you do well] and wants to [what you want to do professionally].
+      </p>
+    </header>
+
+    <!-- 2. SKILLS: replace, add, or delete <li> lines (5 to 8 is a good number) -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <ul class="skills">
+        <li>Microsoft Excel</li>
+        <li>HTML and CSS</li>
+        <li>Written communication</li>
+        <li>Research</li>
+        <li>Teamwork</li>
+        <li>Problem solving</li>
+      </ul>
+    </section>
+
+    <!-- 3. PROJECTS: edit each description and link. Copy a whole <div class="project"> block to add more -->
+    <section id="projects">
+      <h2>Projects</h2>
+
+      <div class="project">
+        <h3>Personal portfolio website</h3>
+        <p>The site you are viewing. Built with HTML and CSS and published with GitHub Pages as part of my Week 3 course assignment.</p>
+        <a href="https://github.com/YOUR-USERNAME/YOUR-REPO-NAME">View code on GitHub</a>
+      </div>
+
+      <div class="project">
+        <h3>[Project 2 name]</h3>
+        <p>[Two sentences: what it is, what you did, and what you learned or produced.]</p>
+        <a href="https://github.com/YOUR-USERNAME/YOUR-PROJECT-REPO">View code on GitHub</a>
+      </div>
+
+      <div class="project">
+        <h3>[Project 3 name]</h3>
+        <p>[Two sentences: what it is, what you did, and what you learned or produced.]</p>
+        <a href="https://github.com/YOUR-USERNAME/YOUR-PROJECT-REPO">View code on GitHub</a>
+      </div>
+    </section>
+
+    <footer id="contact">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:you@example.com">you@example.com</a></p>
+      <p>GitHub: <a href="https://github.com/YOUR-USERNAME">github.com/YOUR-USERNAME</a></p>
+    </footer>
+  </div>
+</body>
+</html>
