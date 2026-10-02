@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Basic JavaScript</title>
+    <!--Timothy Downes Section 04-->
+    <!--“ On my honor, I have neither received nor given any unauthorized assistance on this assignment.”-->
+</head>
+<body>
+    <h1>Your Printouts</h1>
+	
+    <script>
+    //Variable Declarations
+    var entreeCost1, entreeCost2, entreeQuantity1, entreeQuantity2;
+    //My birthday is May 04, 2006
+    var birthMonth=5;
+    var birthDay=4;
+    var birthYear=2006;
+    //My name (Tim Downes)
+    var firstName="Tim", lastName="Downes";
+    
+    //Code beginning here
+    entreeCost1 = Number(prompt ("Enter Entree 1 Cost"));
+    entreeQuantity1 = Number(prompt ("Enter Entree 1 Quantity"));
+    entreeCost2 = Number(prompt ("Enter Entree 2 Cost"));
+    entreeQuantity2 = Number(prompt ("Enter Entree 2 Quantity"));
+
+    //Total Meal Cost variable
+    var totalMealCost=(entreeCost1*entreeQuantity1)+(entreeCost2*entreeQuantity2);
+    alert('Total Meal Cost: $'+totalMealCost.toFixed(2));
+
+    //3rd section starts here
+    document.write("The following lines are the results of my program printed to an HTML page:<br><br>");
+    var totalAfterTax=totalMealCost*1.07;
+    document.write("The cost of this meal will be $"+totalAfterTax.toFixed(2)+"<br>");
+    var tenPercentTip=totalMealCost*.10;
+    document.write("A 10% tip for this meal: $"+tenPercentTip.toFixed(2)+"<br>");
+    var fifteenPercentTip=totalMealCost*.15;
+    document.write("A 15% tip for this meal: $"+fifteenPercentTip.toFixed(2)+"<br>");
+    var twentyPercentTip=totalMealCost*.20;
+    document.write("A 20% tip for this meal: $"+twentyPercentTip.toFixed(2)+"<br>");
+
+    if (entreeQuantity1>entreeQuantity2) {
+        document.write("More meal 1's were ordered<br><br>");
+    }
+    else {
+        if (entreeQuantity2>entreeQuantity1)
+        document.write("More meal 2's were ordered<br><br>");
+    else
+        document.write("The same amount of meal 1's and 2's were ordered.<br><br>");
+    }
+
+    document.write("My name is "+firstName+" "+lastName+"<br>");
+    document.write("My birthday is on "+birthMonth+"/"+birthDay+"/"+birthYear+"<br>");
+    document.write("I was born in the "+(Math.floor(birthYear/100)+1)+"st century.<br>");
+    if (birthMonth<10) {
+        document.write ("My birthday is coming in the following months this year.");
+    }
+    else {
+        if (birthMonth>10)
+        document.write("My birthday has already passed this year.");
+    else
+        document.write("I get a birthday coupon for dinner this month!");
+    }
+
+    </script>
+</body>
+</html>
